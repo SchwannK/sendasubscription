@@ -1,0 +1,46 @@
+{% extends "sendasubscription/base.html" %}
+
+{% block content %}
+
+<div class="col-md-2">
+
+	<button class="btn btn-primary filter-button btn-block" data-filter="all">All</button>
+	{% for category in categories %}
+	<button class="btn btn-default filter-button btn-block" data-filter="{{ category|cut:" "|cut:"("|cut:")"|cut:"&" }}" style="white-space: normal">{{ category }}</button>
+	{% endfor %}
+</div>
+
+<div class="col-md-10">
+	{% for subscription in subscriptions %}
+			<div class="col-md-4 filter {{ subscription.company.category.name|cut:" "|cut:"("|cut:")"|cut:"&" }}">
+				<div class="card cap-top">
+					<div class="card-header">
+				    <h4 class="card-title"><a class="plain" href="{{ subscription.company.url }}" target="_blank">{{ subscription.name }}</a></h4>
+				    <h6 class="card-subtitle text-muted"><b>£{{ subscription.price|floatformat:2 }}</b></h6>
+						<span class="tag tag-default">{{ subscription.company.category.name }}</span>
+				  </div>
+					<div class="text-xs-center">
+						<br>
+					  <a class="plain" href="{{ subscription.company.url }}" target="_blank"><img src="https://logo.clearbit.com/{{ subscription.company.url }}" alt="Card image"></a>
+					</div>
+					<div class="card-block">
+	 					<p class="card-text limit">
+							{{ subscription.description }}
+						</p>
+						<i class="fa fa-question-circle" aria-hidden="true"></i>
+					</div>
+					<figcaption>
+						{{ subscription.description }}
+						<br>
+						<br>
+						<div class="text-xs-center">
+							<a href="{{ subscription.company.url }}" target="_blank" class="btn btn-primary">Find out more</a>
+						</div>
+					</figcaption>
+				</div>
+			</div>
+
+	{% endfor %}
+</div>
+
+{% endblock %}
