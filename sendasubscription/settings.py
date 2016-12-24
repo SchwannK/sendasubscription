@@ -43,6 +43,7 @@ PREREQ_APPS = [
 PROJECT_APPS = [
     'sendasubscription',
     'subscriptions_dir',
+    'subscriptions_lib',
 ]
 
 INSTALLED_APPS = PREREQ_APPS + PROJECT_APPS

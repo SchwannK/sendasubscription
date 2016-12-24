@@ -1,0 +1,20 @@
+# Unix/Linux only!
+
+# delete database and migration files
+rm db.sqlite3
+rm -rf subscriptions_lib/migrations/*
+rm -rf sendasubscription/migrations/*
+rm -rf subscriptions_dir/migrations/*
+
+# regenerate migration files and database based on current models
+python manage.py makemigrations subscriptions_lib
+python manage.py makemigrations sendasubscription
+python manage.py makemigrations subscriptions_dir
+python manage.py migrate
+
+# populate database
+cd subscriptions_lib
+source load_fix
+cd ..
+
+# ready to upload files!
