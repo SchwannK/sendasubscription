@@ -1,0 +1,8 @@
+# run with pip install -r requirement
+
+Django>=1.10.4
+# If you have issues installing lxml, try "pip install lib\lxml-3.6.4-cp36-cp36m-win_amd64.whl"
+# If still having issues, go to http://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml and download the appropriate wheel file for your environment
+
+django-fixture-magic
+django-crispy-forms

@@ -1,0 +1,24 @@
+{% extends "sendasubscription/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="col-md-12">
+  <h1>We'd love to hear from you!</h1>
+  <br>
+
+  <div class="row">
+    <div class="col-md-6">
+      <p>Insert our faces here</p>
+    </div>
+    <div class="col-md-6">
+      {% crispy form 'bootstrap4' %}
+    </div>
+
+
+  </div>
+
+
+</div>
+
+{% endblock %}
