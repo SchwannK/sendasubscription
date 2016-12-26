@@ -12,7 +12,7 @@
 
 <div class="col-md-10">
 	{% for subscription in subscriptions %}
-		{% include 'subscriptions_dir\subscription_template.html' with subscription=subscription bla=subscription.company.category.name %}  
+		{% include 'subscriptions_dir\subscription_template.html' with subscription=subscription %}  
 	{% endfor %}
 </div>
 

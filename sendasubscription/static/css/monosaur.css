@@ -55,14 +55,14 @@ figcaption {
 	letter-spacing: -1px;
 	line-height: 1;
 	font-family: Lobster;
-	top: 180px;
+	top: 100px;
 	position: absolute;
 }
 
 .hero-unit h2 {
 	font-size: 32px;
 	color: #FFFFFF;
-	top: 300px;
+	top: 200px;
 	position: absolute;
 }
 
