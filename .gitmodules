@@ -1,3 +1,4 @@
 [submodule "subscriptions_lib"]
 	path = subscriptions_lib
 	url = https://github.com/gaborbiro/subscriptions_lib.git
+	branch = master
