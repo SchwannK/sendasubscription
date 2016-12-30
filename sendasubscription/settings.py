@@ -25,7 +25,11 @@ SECRET_KEY = ')#$a=ha_cdgy(qq+=ab)js#qc&5l9w(%e8l428t&bb_%_jr89d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'monosaur.pythonanywhere.com',
+    'www.sendasubscription.com',
+    'localhost',
+]
 
 
 # Application definition
@@ -128,6 +132,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'

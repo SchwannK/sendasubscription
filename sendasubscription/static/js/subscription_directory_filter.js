@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    $("#filtersidebar").stick_in_parent({offset_top: 70});
+
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
 
@@ -16,6 +18,15 @@ $(document).ready(function(){
             $('.filter').filter('.'+value).show('3000');
 
         }
+    });
+
+    var selector = ".nav a";
+
+    $(selector).on('click', function(){
+
+      $(selector).removeClass('active');
+      $(this).addClass('active');
+
     });
 
 });

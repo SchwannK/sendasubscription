@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Monosaur</title>
+<title>Send-a-Subscription</title>
 <meta charset="utf-8">
 <link rel="stylesheet"
 	href="//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext"
@@ -21,9 +21,23 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/subscription_directory_filter.js' %}"></script>
+<script src="{% static 'js/jquery.sticky-kit.min.js' %}"></script>
 
 <script
 	src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+
+<!-- Google Analytics -->>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89823937-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
 </head>
 
 <body>
@@ -44,9 +58,15 @@
 	{% block content %}
 	{% endblock %}
 
+	<div style="height:200px"></div>
+
 	<footer>
 		<div class="container">
-			<p>&copy; Monosaur 2016</p>
+			<div class="row">
+				<div class="col-md-12">
+					<p>&copy; Monosaur 2016</p>
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>
