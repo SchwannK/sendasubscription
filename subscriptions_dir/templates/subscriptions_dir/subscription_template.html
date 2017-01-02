@@ -1,3 +1,4 @@
+{% load utiltags %}
 <div class="col-xs-6 col-md-4 filter {{ subscription.company.category.name|cut:" "|cut:"("|cut:")"|cut:"&" }}">
 	<div class="card cap-top">
 		<div class="card-header">
@@ -18,9 +19,19 @@
 		<figcaption>
 			{{ subscription.description }} <br> <br>
 			<div class="text-xs-center">
-				<a href="{{ subscription.company.url }}" target="_blank"
-					class="btn btn-primary">Find out more</a>
-			</div>
+				<form action="/" method="POST">
+				{% csrf_token %} 
+				<script src="https://checkout.stripe.com/checkout.js"
+					class="stripe-button" 
+					data-key="pk_test_Zb0BmjBPj0od3b6MJBXmQqmd"
+					data-amount="{{ subscription.price|times:100 }}" 
+					data-name="{{ subscription.name }}" 
+					data-description="{{ subscription.description }}"
+					data-image="https://logo.clearbit.com/{{ subscription.url }}"
+					data-locale="auto" 
+					data-currency="gbp">
+				</script>
+			</form>
 		</figcaption>
 	</div>
 </div>

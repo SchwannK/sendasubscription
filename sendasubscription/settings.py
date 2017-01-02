@@ -40,6 +40,7 @@ PREREQ_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
     'django.contrib.staticfiles',
     'crispy_forms',
 ]
@@ -48,18 +49,28 @@ PROJECT_APPS = [
     'sendasubscription',
     'subscriptions_dir',
     'subscriptions_lib',
+    # theme
+    "bootstrapform",
+    "pinax_theme_bootstrap",
+
+    # external
+    "account",
+    "pinax.eventlog",
+    "pinax.stripe",
+    "pinax.webanalytics", 
 ]
 
 INSTALLED_APPS = PREREQ_APPS + PROJECT_APPS
 
 MIDDLEWARE = [
-    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.auth.middleware.SessionAuthenticationMiddleware', 
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.security.SecurityMiddleware',
 ]
 
 ROOT_URLCONF = 'sendasubscription.urls'
@@ -75,6 +86,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'account.context_processors.account',
+                'pinax_theme_bootstrap.context_processors.theme', 
             ],
         },
     },
@@ -116,7 +129,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-uk'
 
 TIME_ZONE = 'Europe/London'
 
@@ -142,3 +155,23 @@ EMAIL_HOST_USER = 'test@gmail.com' # To fill in actual
 EMAIL_HOST_PASSWORD = 'password' # To fill in actual
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
+
+ACCOUNT_OPEN_SIGNUP = True
+ACCOUNT_EMAIL_UNIQUE = True
+ACCOUNT_EMAIL_CONFIRMATION_REQUIRED = False
+ACCOUNT_LOGIN_REDIRECT_URL = "home"
+ACCOUNT_LOGOUT_REDIRECT_URL = "home"
+ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 2
+ACCOUNT_USE_AUTH_AUTHENTICATE = True
+
+AUTHENTICATION_BACKENDS = [
+    "account.auth_backends.UsernameAuthenticationBackend",
+] 
+
+SITE_ID = int(os.environ.get("SITE_ID", 1))
+
+SECRET_KEY = "piyfgsek!q1v3jr^%#d+pv61(gfdp7e7hpr)qxce@$w1$cewix"
+
+# Go to https://stripe.com/ and grab your keys and put here
+PINAX_STRIPE_SECRET_KEY = "sk_test_ibJMxPw1wAdx6Ip8GftwPLUq"  # begins with sk_
+PINAX_STRIPE_PUBLIC_KEY = "pk_test_Zb0BmjBPj0od3b6MJBXmQqmd"  # beings with pk_ 

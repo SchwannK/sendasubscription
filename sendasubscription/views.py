@@ -6,7 +6,6 @@ from django.templatetags.static import static
 from sendasubscription.forms import *
 
 def contact(request):
-
     form_class = ContactForm
 
     if request.method == 'POST':

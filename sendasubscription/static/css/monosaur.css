@@ -1,3 +1,13 @@
+body {
+	padding-top: 50px;
+	position: relative;
+}
+footer {
+    padding-bottom: 20px;
+}
+section {
+  padding: 20px 0px;
+} 
 .card {
 	/* Add shadows to create the "card" effect */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -96,7 +106,7 @@ figcaption {
 
 .search {
 	position: absolute;
-	top: 300px;
+	top: 400px;
 }
 
 .search .form-section{

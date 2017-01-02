@@ -1,9 +1,13 @@
-{% extends "sendasubscription/base.html" %}
+{% extends "site_base.html" %}
 
-{% block content %}
+{% load i18n %}
 
-<div class="hero-unit">
+{% block body_class %}home{% endblock %}
+
+{% block body_base %}
+<section class="hero-unit">
 	<div class="container">
+		{% include "_messages.html" %}
 		<h1>Send-a-Subscription</h1>
 		<h2>
 			Send a gift that keeps on giving!
@@ -11,7 +15,6 @@
 
 		<!-- Dummy search bar -->
 		{% include 'subscriptions_dir/search_bar.html' %}
-
 	</div>
 </div>
 
@@ -100,5 +103,4 @@
 		</div>
 	</div>
 </div>
-
 {% endblock %}

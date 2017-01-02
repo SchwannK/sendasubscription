@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
-from subscriptions_lib.models import Category, Company, Subscription
 from subscriptions_dir.utils import subscription_filter_utils
+from subscriptions_lib.models import Subscription
 
 
 def subscriptions_dir(request):
