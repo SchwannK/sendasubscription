@@ -1,29 +1,24 @@
-<div class="col-md-4 filter {{ subscription.company.category.name|cut:" "|cut:"("|cut:")"|cut:"&" }}">
+<div class="col-md-4 filter {{ subscription.company.subcategory.name|cut:" "|cut:"("|cut:")"|cut:"&" }}">
 	<div class="card cap-top">
 		<div class="card-header">
-			<h4 class="card-title">
-				<a class="plain" href="{{ subscription.url }}"
-					target="_blank">{{ subscription.name }}</a>
-			</h4>
-			<h6 class="card-subtitle text-muted">
-				<b>£{{ subscription.price|floatformat:2 }}</b>
-			</h6>
-			<span class="tag tag-default">{{ subscription.company.category.name }}</span>
+			<h4 class="card-title">{{ subscription.name }}</h4>
+			<h6 class="card-title text-muted">by <a href="{{ subscription.company.url }}" target="blank">{{ subscription.company.name }}</a></h6>
+			<h5 class="card-subtitle">
+				<b>£{{ subscription.price|floatformat:2 }}</b> incl. delivery
+			</h5>
+			<span class="tag tag-default">{{ subscription.company.subcategory.name }}</span>
 		</div>
 		<div class="text-xs-center">
-			<br> <a class="plain" href="{{ subscription.url }}"
-				target="_blank"><img
-				src="https://logo.clearbit.com/{{ subscription.url }}"
-				alt="Card image"></a>
+			<br>
+				<img class="img-fluid" src="{{ subscription.img.url }}">
 		</div>
 		<div class="card-block">
-			<p class="card-text limit">{{ subscription.description }}</p>
 			<i class="fa fa-question-circle" aria-hidden="true"></i>
 		</div>
 		<figcaption>
 			{{ subscription.description }} <br> <br>
 			<div class="text-xs-center">
-				<a href="{{ subscription.url }}" target="_blank"
+				<a href="{{ subscription.company.url }}" target="_blank"
 					class="btn btn-primary">Find out more</a>
 			</div>
 		</figcaption>

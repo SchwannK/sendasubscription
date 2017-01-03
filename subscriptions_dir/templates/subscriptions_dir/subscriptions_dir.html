@@ -6,7 +6,7 @@
 	<div class="container">
 		<h1>Send-a-Subscription</h1>
 		<h2>
-			Send gifts that keep on giving!
+			Send a gift that keeps on giving!
 		</h2>
 
 		<!-- Dummy search bar -->
@@ -23,7 +23,7 @@
 	<div class="row">
 		<div class="col-md-10 offset-md-2">
 			<h1>Browse all subscription gifts</h1>
-			<p>We have carefully curated a selection of awesome subscriptions for you to gift to your nagging mother / hunky boyfriend / zealous wife. Indulge yourself below.</p>
+			<br>
 			<br>
 		</div>
 	</div>
@@ -32,8 +32,8 @@
 		<div class="col-md-2">
 
 			<button class="btn btn-primary filter-button btn-block" data-filter="all">All</button>
-			{% for category in categories %}
-			<button class="btn btn-default filter-button btn-block" data-filter="{{ category|cut:" "|cut:"("|cut:")"|cut:"&" }}" style="white-space: normal">{{ category }}</button>
+			{% for subcategory in subcategories %}
+			<button class="btn btn-default filter-button btn-block" data-filter="{{ subcategory|cut:" "|cut:"("|cut:")"|cut:"&" }}" style="white-space: normal">{{ subcategory }}</button>
 			{% endfor %}
 		</div>
 

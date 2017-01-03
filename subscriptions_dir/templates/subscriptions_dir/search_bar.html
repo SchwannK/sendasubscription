@@ -14,10 +14,10 @@
                 <div class="col-md-4">
                   <div class="form-group">
                     <label class="sr-only" for="guest">Category</label>
-                    <select id="guest" name="guest" class="form-control">
-                        <option value="1">Cat A</option>
-                        <option value="2">Cat B</option>
-                        <option value="3">Cat C</option>
+                    <select id="subcategory" name="subcategory" class="form-control">
+                      {% for subcategory in subcategories %}
+                        <option value="{{ subcategory }}">{{ subcategory }}</option>
+                      {% endfor %}
                     </select>
                   </div>
                 </div>
