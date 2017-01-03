@@ -10,7 +10,7 @@
 		</h2>
 
 		<!-- Dummy search bar -->
-		{% include 'subscriptions_dir\search_bar.html' %}
+		{% include 'subscriptions_dir/search_bar.html' %}
 
 	</div>
 </div>
@@ -39,7 +39,7 @@
 
 		<div class="col-md-10">
 			{% for subscription in subscriptions %}
-				{% include 'subscriptions_dir\subscription_template.html' with subscription=subscription %}
+				{% include 'subscriptions_dir/subscription_template.html' with subscription=subscription %}
 			{% endfor %}
 		</div>
 	</div>
