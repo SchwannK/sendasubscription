@@ -1,11 +1,11 @@
 <div class="col-md-4 filter {{ subscription.company.category.name|cut:" "|cut:"("|cut:")"|cut:"&" }}">
 	<div class="card cap-top">
 		<div class="card-header">
-			<h4 class="card-title">{{ subscription.name }}</h4>
+			<h5 class="card-title">{{ subscription.name }}</h5>
 			<h6 class="card-title text-muted">by <a href="{{ subscription.company.url }}" target="blank">{{ subscription.company.name }}</a></h6>
-			<h5 class="card-subtitle">
+			<h6 class="card-subtitle">
 				<b>£{{ subscription.price|floatformat:2 }}</b> incl. delivery
-			</h5>
+			</h6>
 			<span class="tag tag-default">{{ subscription.company.category.name }}</span>
 		</div>
 		<div class="text-xs-center">

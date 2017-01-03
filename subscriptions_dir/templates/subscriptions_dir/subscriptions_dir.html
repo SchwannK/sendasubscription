@@ -30,11 +30,12 @@
 
 	<div class="row">
 		<div class="col-md-2">
-
 			<button class="btn btn-primary filter-button btn-block" data-filter="all">All</button>
 			{% for category in categories %}
-			<button class="btn btn-default filter-button btn-block" data-filter="{{ category|cut:" "|cut:"("|cut:")"|cut:"&" }}" style="white-space: normal">{{ category }}</button>
+			<button class="btn btn-default filter-button btn-block" data-filter="{{ category|cut:" "|cut:"("|cut:")"|cut:"&" }}" style="white-space: normal"><i class="fa fa-{{ category.favicon }}" aria-hidden="true"></i> {{ category }} ({{ category.subscription_set.count }})</button>
 			{% endfor %}
+
+			{{ categories2 }}
 		</div>
 
 		<div class="col-md-10">
