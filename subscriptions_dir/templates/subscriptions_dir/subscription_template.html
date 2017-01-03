@@ -1,4 +1,4 @@
-<div class="col-md-4 filter {{ subscription.company.subcategory.name|cut:" "|cut:"("|cut:")"|cut:"&" }}">
+<div class="col-md-4 filter {{ subscription.company.category.name|cut:" "|cut:"("|cut:")"|cut:"&" }}">
 	<div class="card cap-top">
 		<div class="card-header">
 			<h4 class="card-title">{{ subscription.name }}</h4>
@@ -6,7 +6,7 @@
 			<h5 class="card-subtitle">
 				<b>£{{ subscription.price|floatformat:2 }}</b> incl. delivery
 			</h5>
-			<span class="tag tag-default">{{ subscription.company.subcategory.name }}</span>
+			<span class="tag tag-default">{{ subscription.company.category.name }}</span>
 		</div>
 		<div class="text-xs-center">
 			<br>

@@ -1,4 +1,4 @@
 # @param subscriptions: a QuerySet
-def get_subscription_subcategories(subscriptions):
-    all_subscription_subcategories = subscriptions.values_list('company__subcategory__name', flat=True)
-    return sorted(list(set(list(all_subscription_subcategories))))
+def get_subscription_categories(subscriptions):
+    all_subscription_categories = subscriptions.values_list('company__category__name', flat=True)
+    return sorted(list(set(list(all_subscription_categories))))

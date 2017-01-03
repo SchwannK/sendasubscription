@@ -32,8 +32,8 @@
 		<div class="col-md-2">
 
 			<button class="btn btn-primary filter-button btn-block" data-filter="all">All</button>
-			{% for subcategory in subcategories %}
-			<button class="btn btn-default filter-button btn-block" data-filter="{{ subcategory|cut:" "|cut:"("|cut:")"|cut:"&" }}" style="white-space: normal">{{ subcategory }}</button>
+			{% for category in categories %}
+			<button class="btn btn-default filter-button btn-block" data-filter="{{ category|cut:" "|cut:"("|cut:")"|cut:"&" }}" style="white-space: normal">{{ category }}</button>
 			{% endfor %}
 		</div>
 

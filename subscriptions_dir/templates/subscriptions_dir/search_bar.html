@@ -15,8 +15,8 @@
                   <div class="form-group">
                     <label class="sr-only" for="guest">Category</label>
                     <select id="subcategory" name="subcategory" class="form-control">
-                      {% for subcategory in subcategories %}
-                        <option value="{{ subcategory }}">{{ subcategory }}</option>
+                      {% for category in categories %}
+                        <option value="{{ category }}">{{ category }}</option>
                       {% endfor %}
                     </select>
                   </div>
