@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'monosaur.pythonanywhere.com',
+    'www.sendasubscription.com',
 ]
 
 
