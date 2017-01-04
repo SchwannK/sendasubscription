@@ -25,7 +25,9 @@ SECRET_KEY = ')#$a=ha_cdgy(qq+=ab)js#qc&5l9w(%e8l428t&bb_%_jr89d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'monosaur.pythonanywhere.com',
+]
 
 
 # Application definition
