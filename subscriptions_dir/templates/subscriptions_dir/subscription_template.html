@@ -20,15 +20,15 @@
 			{{ subscription.description }} <br> <br>
 			<div class="text-xs-center">
 				<form action="/" method="POST">
-				{% csrf_token %} 
+				{% csrf_token %}
 				<script src="https://checkout.stripe.com/checkout.js"
-					class="stripe-button" 
+					class="stripe-button"
 					data-key="pk_test_Zb0BmjBPj0od3b6MJBXmQqmd"
-					data-amount="{{ subscription.price|times:100 }}" 
-					data-name="{{ subscription.name }}" 
+					data-amount="{{ subscription.price|times:100 }}"
+					data-name="{{ subscription.name }}"
 					data-description="{{ subscription.description }}"
-					data-image="https://logo.clearbit.com/{{ subscription.url }}"
-					data-locale="auto" 
+					data-image="https://logo.clearbit.com/{{ subscription.company.url }}"
+					data-locale="auto"
 					data-currency="gbp">
 				</script>
 			</form>

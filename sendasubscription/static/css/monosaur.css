@@ -7,7 +7,7 @@ footer {
 }
 section {
   padding: 20px 0px;
-} 
+}
 .card {
 	/* Add shadows to create the "card" effect */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -69,15 +69,28 @@ figcaption {
 	letter-spacing: -1px;
 	line-height: 1;
 	font-family: Lobster;
-	top: 100px;
-	position: absolute;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-unit h2 {
 	font-size: 32px;
 	color: #FFFFFF;
-	top: 200px;
-	position: absolute;
+	display: inline-block;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-unit h3 {
+	font-size: 16px;
+	color: #FFFFFF;
+	display: inline-block;
+	padding: 7px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-unit .button-wrapper {
+	text-align: center;
 }
 
 .hero-unit-contact {
@@ -93,8 +106,12 @@ figcaption {
 	letter-spacing: -1px;
 	line-height: 1;
 	font-family: Lobster;
-	top: 100px;
-	position: absolute;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+#gift-browser {
+	padding-top: 70px; margin-top: -70px;
 }
 
 .fill {
