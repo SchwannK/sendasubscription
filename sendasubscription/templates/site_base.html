@@ -13,7 +13,7 @@
 	<link rel="icon" type="image/png" href="../../static/img/favicon.png">
 {% endblock %}
 
-{% block head_title_base %}Monosaur{% endblock %}
+{% block head_title_base %}Send-a-Subscription{% endblock %}
 
 {% block extra_head_base %}
     {% block extra_head %}{% endblock %}
@@ -23,7 +23,7 @@
 
 {% block topbar %}
 	<div class="navbar-header">
-        <a class="navbar-brand" href="{% url "home" %}">Monosaur</a>
+        <a class="navbar-brand" href="{% url "home" %}">Send-a-Subscription</a>
     </div>
     <div>
 		<ul class="nav navbar-nav pull-right">
@@ -46,6 +46,25 @@
 	<script src="{% static 'js/bootstrap.min.js' %}"></script>
 	<script src="{% static 'js/subscription_directory_filter.js' %}"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+	<script src="{% static 'js/jquery.sticky-kit.min.js' %}"></script>
+	
+	<!-- Google Analytics -->
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script',
+				'https://www.google-analytics.com/analytics.js', 'ga');
+	
+		ga('create', 'UA-89823937-1', 'auto');
+		ga('send', 'pageview');
+	</script>
 {% endblock %}
 
 
