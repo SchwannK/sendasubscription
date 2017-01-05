@@ -57,7 +57,7 @@ figcaption {
 }
 
 .hero-unit {
-	background-image: url("../img/hero_image.jpg");
+	background-image: url("../img/hero_image2.jpg");
 	background-size: cover;
 	background-color: #EEEEEE;
 	height: 500px;
@@ -70,23 +70,20 @@ figcaption {
 	line-height: 1;
 	font-family: Lobster;
 	padding: 10px;
-	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-unit h2 {
-	font-size: 32px;
+	font-size: 36px;
 	color: #FFFFFF;
 	display: inline-block;
 	padding: 10px;
-	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-unit h3 {
-	font-size: 16px;
+	font-size: 18px;
 	color: #FFFFFF;
 	display: inline-block;
 	padding: 7px;
-	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-unit .button-wrapper {
