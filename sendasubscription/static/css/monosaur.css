@@ -106,6 +106,13 @@ figcaption {
 	padding: 13px 12px 0px 12px;
 }
 
+hr.primary {
+	border-color:#428bca;
+	border-width:3px;
+	max-width:50px
+}
+
+
 /* Large desktop */
 @media ( min-width : 1200px) {
 	...
