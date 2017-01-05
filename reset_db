@@ -13,8 +13,8 @@ python manage.py makemigrations subscriptions_dir
 python manage.py migrate
 
 # populate database
-cd subscriptions_lib
-source load_fix
-cd ..
+source subscriptions_lib/load_fix
+
+python manage.py loaddata sites
 
 # ready to upload files!

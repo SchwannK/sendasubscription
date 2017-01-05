@@ -4,7 +4,7 @@ from django.apps import AppConfig
 
 
 class SubscriptionsDirConfig(AppConfig):
-    name = 'subscriptions_dir'
+    name = 'sendasubscription'
 
     def ready(self):
-        import_module("subscription_dir.receivers") 
+        import_module("sendasubscription.receivers") 

@@ -6,10 +6,11 @@ from django.conf.urls.static import static
 from . import views
 
 urlpatterns = [
-    url(r'', include('subscriptions_dir.urls')),
-    url(r'^contact/', views.contact, name='contact'),
-    
+    url(r"", include('subscriptions_dir.urls')),
     url(r"^admin/", include(admin.site.urls)),
     url(r"^account/", include("account.urls")),
     url(r"^payments/", include("pinax.stripe.urls")),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    url(r'^contact/', views.contact, name='contact'),
+]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
