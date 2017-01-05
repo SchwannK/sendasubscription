@@ -81,8 +81,8 @@
     </div>
 
 	<div class="row">
-		<div class="col-md-2">
-			<nav class="nav nav-pills nav-stacked">
+		<div id="filtersidebar" class="col-md-2">
+			<nav  class="nav nav-pills nav-stacked">
 				<a class="nav-link filter-button active" data-filter="all" href="#gift-browser"><i class="fa fa-list" aria-hidden="true"></i> All</a>
 				{% for category in categories %}
 					{% if category.subscription_set.count > 0 %}

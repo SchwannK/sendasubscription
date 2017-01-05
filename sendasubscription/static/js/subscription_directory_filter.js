@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    $("#filtersidebar").stick_in_parent({offset_top: 70});
+
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
 
