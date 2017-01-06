@@ -10,3 +10,5 @@ db.sqlite3
 .project
 .settings
 .pydevproject
+
+migrations

@@ -1,17 +1,26 @@
-{% extends "sendasubscription/base.html" %}
+{% extends "site_base.html" %}
 
-{% block content %}
+{% load i18n %}
 
-<div class="hero-unit">
+{% block body_class %}home{% endblock %}
+
+{% block body_base %}
+<section class="hero-unit">
 	<div class="container">
-		<h1>Send-a-Subscription</h1>
-		<h2>
-			Send a gift that keeps on giving!
-		</h2>
-
-		<!-- Dummy search bar -->
-		{% include 'subscriptions_dir/search_bar.html' %}
-
+		{% include "_messages.html" %}
+		<div class="row">
+			<div class="col-md-7">
+				<h1>Send-a-Subscription</h1>
+				<div style="height: 10px"></div>
+				<h2>Send a gift that keeps on giving.</h2>
+				<div style="height: 10px"></div>
+				<h3>We are a home for cool and nifty subscriptions, so you can easily compare and buy a unique gift for that special someone (or yourself).</h3>
+				<div style="height: 50px"></div>
+				<div class="button-wrapper">
+					<a class="btn btn-primary btn-lg" href="#gift-browser" role="button">Browse our collection</a>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -21,7 +30,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-12 text-xs-center">
-            <h2 class="section-heading">Four reasons to love us</h2>
+            <h2 class="section-heading">Four reasons why you'll love us</h2>
             <hr class="primary">
 						<br>
         </div>
@@ -100,5 +109,4 @@
 		</div>
 	</div>
 </div>
-
 {% endblock %}

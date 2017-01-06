@@ -1,3 +1,13 @@
+body {
+	padding-top: 50px;
+	position: relative;
+}
+footer {
+    padding-bottom: 20px;
+}
+section {
+  padding: 20px 0px;
+}
 .card {
 	/* Add shadows to create the "card" effect */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -47,7 +57,7 @@ figcaption {
 }
 
 .hero-unit {
-	background-image: url("../img/hero_image.jpg");
+	background-image: url("../img/hero_image2.jpg");
 	background-size: cover;
 	background-color: #EEEEEE;
 	height: 500px;
@@ -59,32 +69,45 @@ figcaption {
 	letter-spacing: -1px;
 	line-height: 1;
 	font-family: Lobster;
-	top: 100px;
-	position: absolute;
+	padding: 10px;
 }
 
 .hero-unit h2 {
-	font-size: 32px;
+	font-size: 36px;
 	color: #FFFFFF;
-	top: 200px;
-	position: absolute;
+	display: inline-block;
+	padding: 10px;
+}
+
+.hero-unit h3 {
+	font-size: 18px;
+	color: #FFFFFF;
+	display: inline-block;
+	padding: 7px;
+}
+
+.hero-unit .button-wrapper {
+	text-align: center;
 }
 
 .hero-unit-contact {
-	background-image: url("../img/contact_us.jpg");
+	background-image: url("../img/contact_us2.jpg");
 	background-size: cover;
 	background-color: #EEEEEE;
 	height: 500px;
 }
 
 .hero-unit-contact h1 {
-	color: #FFFFFF;
+	color: #333333;
 	font-size: 80px;
 	letter-spacing: -1px;
 	line-height: 1;
 	font-family: Lobster;
-	top: 100px;
-	position: absolute;
+	padding: 10px;
+}
+
+#gift-browser {
+	padding-top: 70px; margin-top: -70px;
 }
 
 .fill {
@@ -96,7 +119,7 @@ figcaption {
 
 .search {
 	position: absolute;
-	top: 300px;
+	top: 400px;
 }
 
 .search .form-section{

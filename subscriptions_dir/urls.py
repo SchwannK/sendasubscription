@@ -1,7 +1,9 @@
-from django.conf.urls import url
+from django.conf.urls import include, url
+from django.contrib import admin 
 
 from . import views
 
+
 urlpatterns = [
-    url(r'^$', views.subscriptions_dir, name='subscriptions_dir')
+    url(r'^$', views.subscriptions_dir, name='home'),
 ]
