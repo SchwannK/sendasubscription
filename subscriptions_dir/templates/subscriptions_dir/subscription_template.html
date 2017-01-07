@@ -18,31 +18,35 @@
 			<div class="text-xs-center">
 				<!-- Button trigger modal -->
 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cardModal{{subscription.pk}}">
-				  Find out more
+					Find out more
 				</button>
 			</div>
 		</div>
 
 		<!-- Modal -->
 		<div class="modal fade" id="cardModal{{ subscription.pk }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
 						<div class="row">
 							<div class="col-md-4">
 								<img class="img-fluid" src="https://logo.clearbit.com/{{ subscription.company.url }}" alt="Card image">
 							</div>
 							<div class="col-md-8">
-				        <h4 class="modal-title" id="myModalLabel">{{ subscription.name }}</h4>
-								<h6>by <a href="{{ subscription.company.url }}" target="blank">{{ subscription.company.name }}</a></h6>
-								<h6><b>£{{ subscription.price|floatformat:2 }}</b> incl. delivery</h6>
+								<h4 class="modal-title" id="myModalLabel">{{ subscription.name }}</h4>
+								<h6>
+									by <a href="{{ subscription.company.url }}" target="blank">{{ subscription.company.name }}</a>
+								</h6>
+								<h6>
+									<b>£{{ subscription.price|floatformat:2 }}</b> incl. delivery
+								</h6>
 							</div>
 						</div>
-		      </div>
-		      <div class="modal-body">
+					</div>
+					<div class="modal-body">
 
 						<!-- Bootstrap modified image carousel -->
 						<div id='carousel-custom{{ subscription.pk }}' class='carousel slide carousel-custom' data-ride='carousel'>
@@ -79,20 +83,30 @@
 
 							<!-- Indicators -->
 							<ol class='carousel-indicators mCustomScrollbar'>
-								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='0' class='active'><img src='http://placehold.it/100x50&text=slide1' alt='' /></li>
-								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='1'><img src='http://placehold.it/100x50&text=slide2' alt='' /></li>
-								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='2'><img src='http://placehold.it/100x50&text=slide3' alt='' /></li>
-								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='3'><img src='http://placehold.it/100x50&text=slide4' alt='' /></li>
-								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='4'><img src='http://placehold.it/100x50&text=slide5' alt='' /></li>
+								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='0' class='active'>
+									<img src='http://placehold.it/100x50&text=slide1' alt='' />
+								</li>
+								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='1'>
+									<img src='http://placehold.it/100x50&text=slide2' alt='' />
+								</li>
+								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='2'>
+									<img src='http://placehold.it/100x50&text=slide3' alt='' />
+								</li>
+								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='3'>
+									<img src='http://placehold.it/100x50&text=slide4' alt='' />
+								</li>
+								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='4'>
+									<img src='http://placehold.it/100x50&text=slide5' alt='' />
+								</li>
 							</ol>
 						</div>
 
 						<br>
 						<p>{{ subscription.description }}</p>
-		      </div>
+					</div>
 
 					<!-- Stripe payment button -->
-		      <div class="modal-footer">
+					<div class="modal-footer">
 						<div class="text-xs-center">
 							<form action="/" method="POST">
 								{% csrf_token %}
@@ -108,10 +122,9 @@
 								</script>
 							</form>
 						</div>
-		      </div>
-
-		    </div>
-		  </div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
