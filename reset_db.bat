@@ -6,6 +6,7 @@ del subscriptions_dir\migrations\*
 python manage.py makemigrations subscriptions_lib
 python manage.py makemigrations sendasubscription
 python manage.py makemigrations subscriptions_dir
+python manage.py makemigrations faq
 python manage.py migrate
 
 call subscriptions_lib\load_fix.bat
