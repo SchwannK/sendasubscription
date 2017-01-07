@@ -3,7 +3,6 @@
 {% load staticfiles %}
 
 {% load pinax_webanalytics_tags %}
-{% analytics %}
 {% load i18n %}
 {% load account_tags %}
 
@@ -23,7 +22,7 @@
 
 {% block topbar %}
 <div class="navbar-header">
-	<a class="navbar-brand" href="{% url "home" %}">Send-a-Subscription</a>
+	<a class="navbar-brand" href="{% url 'home' %}">Send-a-Subscription</a>
 </div>
 <div>
 	<ul class="nav navbar-nav pull-right">
@@ -66,4 +65,8 @@
 	ga('create', 'UA-89823937-1', 'auto');
 	ga('send', 'pageview');
 </script>
+{% endblock %}
+{% block extra_body_base %}
+    {% analytics %}
+    {% block extra_body %}{% endblock %}
 {% endblock %}
