@@ -24,8 +24,8 @@
 		<h3>{{ category.name }}</h3>
 		<br>
 		{% for entry in category.faqentry_set.all %}
-			<h5>{{ entry.question }}</h5>
-			<p>{{ entry.answer }}</p>
+			<h5>{{ entry.question|safe }}</h5>
+			<p>{{ entry.answer|safe }}</p>
 			<br>
 		{% endfor %}
 		<br>

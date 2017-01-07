@@ -1,0 +1,37 @@
+[
+ {
+   "model": "faq.faqcategory",
+   "pk": 0,
+   "fields": {
+      "name": "General"
+   }
+},
+ {
+   "model": "faq.faqcategory",
+   "pk": 1,
+   "fields": {
+      "name": "Delivery"
+   }
+},
+ {
+   "model": "faq.faqcategory",
+   "pk": 2,
+   "fields": {
+      "name": "Returns and cancellations"
+   }
+},
+ {
+   "model": "faq.faqcategory",
+   "pk": 3,
+   "fields": {
+      "name": "Partnerships"
+   }
+},
+ {
+   "model": "faq.faqcategory",
+   "pk": 4,
+   "fields": {
+      "name": "Other"
+   }
+}
+]

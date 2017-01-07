@@ -1,0 +1,65 @@
+[
+ {
+   "model": "faq.faqentry",
+   "pk": 0,
+   "fields": {
+      "category": 0,
+      "question": "What is Send-a-Subscription?",
+      "answer": "We are a platform bringing together all sorts of different subscriptions, enabling people to easily discover, compare, and decide on unique subscription gifts."
+   }
+},
+ {
+   "model": "faq.faqentry",
+   "pk": 1,
+   "fields": {
+      "category": 0,
+      "question": "Why isn't subscription X featured on your site?",
+      "answer": "We ultimately aim to feature a universal directory of all the best subscriptions out there. However, we are really young and still growing, and more work needs to be done before we can bring in all these wonderful products. Rest assured we are working hard on it!"
+   }
+},
+ {
+   "model": "faq.faqentry",
+   "pk": 2,
+   "fields": {
+      "category": 1,
+      "question": "How will the person I'm gifting to receive the subscription?",
+      "answer": "The lucky recipient will get an e-certificate for the subscription through his email inbox, and will be able to activate the subscription from there. In some cases, the company might ask him or her to set up an account with them to specify their personal preferences for the subscription gift."
+   }
+},
+ {
+   "model": "faq.faqentry",
+   "pk": 3,
+   "fields": {
+      "category": 1,
+      "question": "How do I know the person I have gifted my subscription to has received the gift?",
+      "answer": "We will send you a confirmation email when the subscription gift has been processed. You may also discover a significant uptick in the person's mood and relations towards you during your next encounter."
+   }
+},
+ {
+   "model": "faq.faqentry",
+   "pk": 4,
+   "fields": {
+      "category": 2,
+      "question": "I've changed my mind. Can I cancel my subscription gift?",
+      "answer": "We can cancel your order and refund the entire amount to your card as long as the transaction has not been processed yet. Unfortunately we cannot offer any refunds at the present moment if your order has already gone through."
+   }
+},
+ {
+   "model": "faq.faqentry",
+   "pk": 5,
+   "fields": {
+      "category": 3,
+      "question": "I love your website and want to get my company featured on it. How can I partner up with you?",
+      "answer": "Glad that you support our idea and want to partner up with us! You can reach out to us on our <a href=\"/contact\">contact page</a> and we will get in touch with you as soon as we can."
+   }
+},
+ {
+   "model": "faq.faqentry",
+   "pk": 6,
+   "fields": {
+      "category": 4,
+      "question": "These are not the questions I am looking for.",
+      "answer": "These answers will do fine. Just kidding! Hit us up on our <a href=\"/contact\">contact page</a> and we will aim to get back to you on your queries as soon as we can."
+   }
+}
+]

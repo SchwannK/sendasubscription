@@ -10,5 +10,6 @@ python manage.py makemigrations faq
 python manage.py migrate
 
 call subscriptions_lib\load_fix.bat
+call faq\load_fix.bat
 
 python manage.py loaddata sites

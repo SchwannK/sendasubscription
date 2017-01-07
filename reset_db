@@ -15,6 +15,7 @@ python manage.py migrate
 
 # populate database
 source subscriptions_lib/load_fix
+source faq/load_fix
 
 python manage.py loaddata sites
 
