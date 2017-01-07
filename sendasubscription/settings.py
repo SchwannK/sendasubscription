@@ -36,6 +36,8 @@ PROJECT_APPS = [
     'sendasubscription',
     'subscriptions_dir',
     'subscriptions_lib',
+    'faq',
+
     # theme
     "bootstrapform",
     "pinax_theme_bootstrap",

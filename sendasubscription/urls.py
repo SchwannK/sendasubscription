@@ -11,6 +11,7 @@ urlpatterns = [
     url(r"^account/", include("account.urls")),
     url(r"^payments/", include("pinax.stripe.urls")),
     url(r'^contact/', views.contact, name='contact'),
+    url(r'^faq/', include('faq.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
