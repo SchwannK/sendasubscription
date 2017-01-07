@@ -1,5 +1,5 @@
-{% extends "site_base.html" %} 
-{% load i18n %} 
+{% extends "site_base.html" %}
+{% load i18n %}
 
 {% block body_class %}home{% endblock %}
 
@@ -36,14 +36,14 @@
 	<div class="row">
 		<div class="col-lg-3 col-md-6 text-xs-center">
 			<div class="service-box">
-				<i class="fa fa-4x fa-gift text-primary sr-icons"></i> <br> <br>
+				<i class="fa fa-5x fa-gift text-primary sr-icons"></i> <br> <br>
 				<h3>1. Browse gifts</h3>
 				<p class="text-muted">Browse our carefully curated selection of subscriptions below for something to gift to a friend or loved one.</p>
 			</div>
 		</div>
 		<div class="col-lg-3 col-md-6 text-xs-center">
 			<div class="service-box">
-				<i class="fa fa-4x fa-file-text-o text-primary sr-icons"></i> <br>
+				<i class="fa fa-5x fa-file-text-o text-primary sr-icons"></i> <br>
 				<br>
 				<h3>2. Read details</h3>
 				<p class="text-muted">Click on a card to find out more about exactly what you're gifting for each subscription.</p>
@@ -51,7 +51,7 @@
 		</div>
 		<div class="col-lg-3 col-md-6 text-xs-center">
 			<div class="service-box">
-				<i class="fa fa-4x fa-pencil-square-o text-primary sr-icons"></i> <br>
+				<i class="fa fa-5x fa-pencil-square-o text-primary sr-icons"></i> <br>
 				<br>
 				<h3>3. Gift subscription</h3>
 				<p class="text-muted">Give us some basic details about the lucky recipient you are sending the gift to and make the payment.</p>
@@ -59,7 +59,7 @@
 		</div>
 		<div class="col-lg-3 col-md-6 text-xs-center">
 			<div class="service-box">
-				<i class="fa fa-4x fa-magic text-primary sr-icons"></i> <br> <br>
+				<i class="fa fa-5x fa-magic text-primary sr-icons"></i> <br> <br>
 				<h3>4. Magic happens</h3>
 				<p class="text-muted">We send out the subscription gift on your behalf, and the lucky person gets to indulge in the gift for your chosen duration.</p>
 			</div>
@@ -89,16 +89,20 @@
 				{% for category in categories %}
 					{% if category.subscription_set.count > 0 %}
 						<a class="nav-link filter-button" href="#gift-browser" data-filter="{{ category|cut:""|cut:"("|cut:")"|cut:"&" }}">
-							<i class="fa fa-{{ category.favicon }}" aria-hidden="true"></i> 
+							<i class="fa fa-{{ category.favicon }}" aria-hidden="true"></i>
 							{{ category }} ({{ category.subscription_set.count }})
 						</a>
-					{% endif %} 
+					{% endif %}
 				{% endfor %}
 			</nav>
+
+			<div style="height: 50px"></div>
+			<div id="slider"></div>
+
 		</div>
 		<div class="col-md-10">
 		{% for subscription in subscriptions %}
-			{% include 'subscriptions_dir/subscription_template.html' with subscription=subscription %} 
+			{% include 'subscriptions_dir/subscription_template.html' with subscription=subscription %}
 		{% endfor %}
 		</div>
 	</div>

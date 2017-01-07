@@ -1,11 +1,11 @@
 {% extends "theme_bootstrap/base.html" %}
 
-{% load staticfiles %} 
+{% load staticfiles %}
 
 {% load pinax_webanalytics_tags %}
 {% analytics %}
 {% load i18n %}
-{% load account_tags %} 
+{% load account_tags %}
 
 {% block styles %}
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext" type="text/css">
@@ -13,12 +13,13 @@
 <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
 <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}" type="text/css">
 <link rel="stylesheet" href="{% static 'css/custom-image-carousel.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'css/nouislider.min.css' %}" type="text/css">
 <link rel="icon" type="image/png" href="../../static/img/favicon.png">
-{% endblock %} 
+{% endblock %}
 
 {% block head_title_base %}Send-a-Subscription{% endblock %}
 
-{% block navbar_class %}navbar-dark bg-inverse navbar-fixed-top{% endblock %} 
+{% block navbar_class %}navbar-dark bg-inverse navbar-fixed-top{% endblock %}
 
 {% block topbar %}
 <div class="navbar-header">
@@ -29,14 +30,14 @@
 		<li class="nav-item"><a class="nav-link {% if navbar == 'subscriptions' %}active{% endif %}" href="/">Subscriptions</a></li>
 		<li class="nav-item"><a class="nav-link {% if navbar == 'contact' %}active{% endif %}" href="/contact">Contact us</a></li>
 		<li class="nav-item"><a class="nav-link {% if navbar == 'faq' %}active{% endif %}" href="/faq">FAQs</a></li>
-		<li class="nav-item nav-link">|</li> 
+		<li class="nav-item nav-link">|</li>
 		{% include "_account_bar.html" %}
 	</ul>
 </div>
 {% endblock %}
 
 {% block footer %}
-	{% include "_footer.html" %} 
+	{% include "_footer.html" %}
 {% endblock %}
 
 {% block scripts %}
@@ -45,6 +46,8 @@
 <script src="{% static 'js/subscription_directory_filter.js' %}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 <script src="{% static 'js/jquery.sticky-kit.min.js' %}"></script>
+<script src="{% static 'js/nouislider.min.js' %}"></script>
+<script src="{% static 'js/price_slider.js' %}"></script>
 
 <!-- Google Analytics -->
 <script>
@@ -63,4 +66,4 @@
 	ga('create', 'UA-89823937-1', 'auto');
 	ga('send', 'pageview');
 </script>
-{% endblock %} 
+{% endblock %}

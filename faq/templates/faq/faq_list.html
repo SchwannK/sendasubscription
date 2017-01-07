@@ -13,13 +13,14 @@
 			<br>
 			<br>
 			<h5 class="text-muted">Simple answers to your most common questions</h5>
-			<hr class="primary">
 		</div>
 	</div>
 
 	<div style="height: 50px"></div>
 
 	{% for category in faq_categories %}
+	<hr style="width: 50%">
+	<div style="height: 50px"></div>
 	<div class="row">
 		<h3>{{ category.name }}</h3>
 		<br>
@@ -28,9 +29,7 @@
 			<p>{{ entry.answer|safe }}</p>
 			<br>
 		{% endfor %}
-		<br>
 	</div>
-	<div style="height: 20px"></div>
 	{% endfor %}
 </div>
 {% endblock %}

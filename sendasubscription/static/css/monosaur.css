@@ -135,6 +135,11 @@ hr.primary {
 	max-width:50px
 }
 
+/* NoUISlider */
+#slider .noUi-connect {
+	background: #428bca;
+}
+
 /* Large desktop */
 @media ( min-width : 1200px) {
 	...
