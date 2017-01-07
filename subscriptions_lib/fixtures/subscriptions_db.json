@@ -1,0 +1,587 @@
+[
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 0,
+   "fields": {
+      "name": "One bottle of beer every week for 12 weeks",
+      "company": 1,
+      "category": 0,
+      "description": "One beer and the story behind it, delivered for £3 a week.",
+      "price": 36,
+      "img": "subscription_thumbnails/beerbods.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 1,
+   "fields": {
+      "name": "One bottle of beer every week for 24 weeks",
+      "company": 1,
+      "category": 0,
+      "description": "One beer and the story behind it, delivered for £3 a week.",
+      "price": 70,
+      "img": "subscription_thumbnails/beerbods.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 2,
+   "fields": {
+      "name": "One bottle of beer every week for 48 weeks",
+      "company": 1,
+      "category": 0,
+      "description": "One beer and the story behind it, delivered for £3 a week.",
+      "price": 135,
+      "img": "subscription_thumbnails/beerbods.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 3,
+   "fields": {
+      "name": "Three Recipe Box meals for 2 people",
+      "company": 0,
+      "category": 6,
+      "description": "Make your life easier with the HelloFresh Food Box. Easy recipes and delicious ingredients sent to your door weekly, thanks to our fresh food delivery service.",
+      "price": 42,
+      "img": "subscription_thumbnails/hellofresh.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 4,
+   "fields": {
+      "name": "Three Recipe Box meals for 4 people",
+      "company": 0,
+      "category": 6,
+      "description": "Make your life easier with the HelloFresh Food Box. Easy recipes and delicious ingredients sent to your door weekly, thanks to our fresh food delivery service.",
+      "price": 62,
+      "img": "subscription_thumbnails/hellofresh.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 5,
+   "fields": {
+      "name": "Five Recipe Box meals for 2 people",
+      "company": 0,
+      "category": 6,
+      "description": "Make your life easier with the HelloFresh Food Box. Easy recipes and delicious ingredients sent to your door weekly, thanks to our fresh food delivery service.",
+      "price": 52,
+      "img": "subscription_thumbnails/hellofresh.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 6,
+   "fields": {
+      "name": "3 month coffee bag subscription",
+      "company": 2,
+      "category": 0,
+      "description": "Look no further for the perfect! eightpointnine can solve all your present worries with a coffee gift for a friend or family member.",
+      "price": 25,
+      "img": "subscription_thumbnails/eightpointnine.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 7,
+   "fields": {
+      "name": "6 month coffee bag subscription",
+      "company": 2,
+      "category": 0,
+      "description": "Look no further for the perfect! eightpointnine can solve all your present worries with a coffee gift for a friend or family member.",
+      "price": 48,
+      "img": "subscription_thumbnails/eightpointnine.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 8,
+   "fields": {
+      "name": "12 month coffee bag subscription",
+      "company": 2,
+      "category": 0,
+      "description": "Look no further for the perfect! eightpointnine can solve all your present worries with a coffee gift for a friend or family member.",
+      "price": 92,
+      "img": "subscription_thumbnails/eightpointnine.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 9,
+   "fields": {
+      "name": "3 month coffee subscription",
+      "company": 3,
+      "category": 2,
+      "description": "This is the perfect gift for those who love coffee and exploring new things. The lucky recipient will receive their speciality coffee each month, handpicked by experts, freshly roasted and delivered through their letterbox. Our plans are gifts that last beyond the day itself, as month by month your loved one will receive their favourite coffee, along with a booklet about the story of the farm it comes from, tasting notes and recommended brewing methods.",
+      "price": 24,
+      "img": "subscription_thumbnails/cafedirect.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 10,
+   "fields": {
+      "name": "6 month coffee subscription",
+      "company": 3,
+      "category": 2,
+      "description": "This is the perfect gift for those who love coffee and exploring new things. The lucky recipient will receive their speciality coffee each month, handpicked by experts, freshly roasted and delivered through their letterbox. Our plans are gifts that last beyond the day itself, as month by month your loved one will receive their favourite coffee, along with a booklet about the story of the farm it comes from, tasting notes and recommended brewing methods.",
+      "price": 45,
+      "img": "subscription_thumbnails/cafedirect.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 11,
+   "fields": {
+      "name": "12 month coffee subscription",
+      "company": 3,
+      "category": 2,
+      "description": "This is the perfect gift for those who love coffee and exploring new things. The lucky recipient will receive their speciality coffee each month, handpicked by experts, freshly roasted and delivered through their letterbox. Our plans are gifts that last beyond the day itself, as month by month your loved one will receive their favourite coffee, along with a booklet about the story of the farm it comes from, tasting notes and recommended brewing methods.",
+      "price": 85,
+      "img": "subscription_thumbnails/cafedirect.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 12,
+   "fields": {
+      "name": "3 month craft beer case subscription",
+      "company": 4,
+      "category": 0,
+      "description": "We deliver a monthly case of craft beers from the best independent microbreweries around the world. This gift provides 8 different exclusive craft beers and Ferment Magazine every month.",
+      "price": 69,
+      "img": "subscription_thumbnails/beer52.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 13,
+   "fields": {
+      "name": "6 month craft beer case subscription",
+      "company": 4,
+      "category": 0,
+      "description": "We deliver a monthly case of craft beers from the best independent microbreweries around the world. This gift provides 8 different exclusive craft beers and Ferment Magazine every month.",
+      "price": 132,
+      "img": "subscription_thumbnails/beer52.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 14,
+   "fields": {
+      "name": "12 month craft beer case subscription",
+      "company": 4,
+      "category": 0,
+      "description": "We deliver a monthly case of craft beers from the best independent microbreweries around the world. This gift provides 8 different exclusive craft beers and Ferment Magazine every month.",
+      "price": 252,
+      "img": "subscription_thumbnails/beer52.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 15,
+   "fields": {
+      "name": "3 month chocolate tasting course",
+      "company": 6,
+      "category": 6,
+      "description": "Know someone who considers themself a bit of an epicure? A chocolate gourmet? Or simply just can’t enough chocolate? Well we’ve created the perfect club for them.\nAs a member of the Cocoa Runners club they’ll receive a box of four carefully selected premium chocolate bars every month in their choice of either mixed or dark bars.\nWith each box we aim to broaden their experiences of chocolate, from exploring single origin beans, to comparing styles and flavour from different parts of the world, to unwrapping the stories behind our artisan makers – they’ll have plenty to look forward to.\nThey’ll also find tasting cards and expert reviews by our team to guide them along the way. What’s more exciting than receiving the finest chocolate from around the world straight to your doorstep?!",
+      "price": 59.95,
+      "img": "subscription_thumbnails/cocoarunners.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 16,
+   "fields": {
+      "name": "6 month chocolate tasting course",
+      "company": 6,
+      "category": 6,
+      "description": "Know someone who considers themself a bit of an epicure? A chocolate gourmet? Or simply just can’t enough chocolate? Well we’ve created the perfect club for them.\nAs a member of the Cocoa Runners club they’ll receive a box of four carefully selected premium chocolate bars every month in their choice of either mixed or dark bars.\nWith each box we aim to broaden their experiences of chocolate, from exploring single origin beans, to comparing styles and flavour from different parts of the world, to unwrapping the stories behind our artisan makers – they’ll have plenty to look forward to.\nThey’ll also find tasting cards and expert reviews by our team to guide them along the way. What’s more exciting than receiving the finest chocolate from around the world straight to your doorstep?!",
+      "price": 119.95,
+      "img": "subscription_thumbnails/cocoarunners.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 17,
+   "fields": {
+      "name": "12 month chocolate tasting course",
+      "company": 6,
+      "category": 6,
+      "description": "Know someone who considers themself a bit of an epicure? A chocolate gourmet? Or simply just can’t enough chocolate? Well we’ve created the perfect club for them.\nAs a member of the Cocoa Runners club they’ll receive a box of four carefully selected premium chocolate bars every month in their choice of either mixed or dark bars.\nWith each box we aim to broaden their experiences of chocolate, from exploring single origin beans, to comparing styles and flavour from different parts of the world, to unwrapping the stories behind our artisan makers – they’ll have plenty to look forward to.\nThey’ll also find tasting cards and expert reviews by our team to guide them along the way. What’s more exciting than receiving the finest chocolate from around the world straight to your doorstep?!",
+      "price": 239.95,
+      "img": "subscription_thumbnails/cocoarunners.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 18,
+   "fields": {
+      "name": "5 graze snack boxes",
+      "company": 7,
+      "category": 6,
+      "description": "By gifting a Graze subscription, your lucky someone will get access to all the newest snacks created by our taste experts and approved by our nutritionist. Discover a new favourite today!",
+      "price": 19.95,
+      "img": "subscription_thumbnails/graze.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 19,
+   "fields": {
+      "name": "10 graze snack boxes",
+      "company": 7,
+      "category": 6,
+      "description": "By gifting a Graze subscription, your lucky someone will get access to all the newest snacks created by our taste experts and approved by our nutritionist. Discover a new favourite today!",
+      "price": 39.9,
+      "img": "subscription_thumbnails/graze.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 20,
+   "fields": {
+      "name": "15 graze snack boxes",
+      "company": 7,
+      "category": 6,
+      "description": "By gifting a Graze subscription, your lucky someone will get access to all the newest snacks created by our taste experts and approved by our nutritionist. Discover a new favourite today!",
+      "price": 59.85,
+      "img": "subscription_thumbnails/graze.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 21,
+   "fields": {
+      "name": "Tasting Club 3 month subscription",
+      "company": 8,
+      "category": 6,
+      "description": "A box of our newest chocolates every month for 3 months with our exclusive Tasting Club, featuring yet to be released recipes.",
+      "price": 60,
+      "img": "subscription_thumbnails/hotelchocolat.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 22,
+   "fields": {
+      "name": "Tasting Club 6 month subscription",
+      "company": 8,
+      "category": 6,
+      "description": "A box of our newest chocolates every month for 6 months with our exclusive Tasting Club, featuring yet to be released recipes.",
+      "price": 110,
+      "img": "subscription_thumbnails/hotelchocolat.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 23,
+   "fields": {
+      "name": "Tasting Club 12 month subscription",
+      "company": 8,
+      "category": 6,
+      "description": "A box of our newest chocolates every month for 12 months with our exclusive Tasting Club, featuring yet to be released recipes.",
+      "price": 195,
+      "img": "subscription_thumbnails/hotelchocolat.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 24,
+   "fields": {
+      "name": "3 month Colours & Flavours subscription - 2 bottles per month",
+      "company": 9,
+      "category": 0,
+      "description": "Know someone who loves wine? My Vitibox will get them from beginner to connoisseur in no time. Each month, they will receive two bottles of wine carefully selected by Alain Gousse, the former Head Sommelier of Michelin starred restaurants la Tour d’Argent, le Crillon, le Pavillon de la Rotonde and le Hameau Albert 1er. Accompanying the wine is a fun but educational booklet that walks them through how to taste each of the wines in the box, along with definitions of wine jargon to look out for and some recipe ideas to follow the key food and wine pairing rules. They can even receive small bottles of wine aromas to train their nose!",
+      "price": 87,
+      "img": "subscription_thumbnails/myvitibox.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 25,
+   "fields": {
+      "name": "6 month Colours & Flavours subscription - 2 bottles per month",
+      "company": 9,
+      "category": 0,
+      "description": "Know someone who loves wine? My Vitibox will get them from beginner to connoisseur in no time. Each month, they will receive two bottles of wine carefully selected by Alain Gousse, the former Head Sommelier of Michelin starred restaurants la Tour d’Argent, le Crillon, le Pavillon de la Rotonde and le Hameau Albert 1er. Accompanying the wine is a fun but educational booklet that walks them through how to taste each of the wines in the box, along with definitions of wine jargon to look out for and some recipe ideas to follow the key food and wine pairing rules. They can even receive small bottles of wine aromas to train their nose!",
+      "price": 168,
+      "img": "subscription_thumbnails/myvitibox.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 26,
+   "fields": {
+      "name": "3 month Red Passion subscription - 1 bottle per month",
+      "company": 9,
+      "category": 0,
+      "description": "Know someone who loves wine? My Vitibox will get them from beginner to connoisseur in no time. Each month, they will receive two bottles of wine carefully selected by Alain Gousse, the former Head Sommelier of Michelin starred restaurants la Tour d’Argent, le Crillon, le Pavillon de la Rotonde and le Hameau Albert 1er. Accompanying the wine is a fun but educational booklet that walks them through how to taste each of the wines in the box, along with definitions of wine jargon to look out for and some recipe ideas to follow the key food and wine pairing rules. They can even receive small bottles of wine aromas to train their nose!",
+      "price": 84,
+      "img": "subscription_thumbnails/myvitibox.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 27,
+   "fields": {
+      "name": "6 month Red Passion subscription - 1 bottle per month",
+      "company": 9,
+      "category": 0,
+      "description": "Know someone who loves wine? My Vitibox will get them from beginner to connoisseur in no time. Each month, they will receive two bottles of wine carefully selected by Alain Gousse, the former Head Sommelier of Michelin starred restaurants la Tour d’Argent, le Crillon, le Pavillon de la Rotonde and le Hameau Albert 1er. Accompanying the wine is a fun but educational booklet that walks them through how to taste each of the wines in the box, along with definitions of wine jargon to look out for and some recipe ideas to follow the key food and wine pairing rules. They can even receive small bottles of wine aromas to train their nose!",
+      "price": 162,
+      "img": "subscription_thumbnails/myvitibox.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 28,
+   "fields": {
+      "name": "3 month Red Passion subscription - 2 bottles per month",
+      "company": 9,
+      "category": 0,
+      "description": "Know someone who loves wine? My Vitibox will get them from beginner to connoisseur in no time. Each month, they will receive two bottles of wine carefully selected by Alain Gousse, the former Head Sommelier of Michelin starred restaurants la Tour d’Argent, le Crillon, le Pavillon de la Rotonde and le Hameau Albert 1er. Accompanying the wine is a fun but educational booklet that walks them through how to taste each of the wines in the box, along with definitions of wine jargon to look out for and some recipe ideas to follow the key food and wine pairing rules. They can even receive small bottles of wine aromas to train their nose!",
+      "price": 123,
+      "img": "subscription_thumbnails/myvitibox.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 29,
+   "fields": {
+      "name": "6 month Red Passion subscription - 2 bottles per month",
+      "company": 9,
+      "category": 0,
+      "description": "Know someone who loves wine? My Vitibox will get them from beginner to connoisseur in no time. Each month, they will receive two bottles of wine carefully selected by Alain Gousse, the former Head Sommelier of Michelin starred restaurants la Tour d’Argent, le Crillon, le Pavillon de la Rotonde and le Hameau Albert 1er. Accompanying the wine is a fun but educational booklet that walks them through how to taste each of the wines in the box, along with definitions of wine jargon to look out for and some recipe ideas to follow the key food and wine pairing rules. They can even receive small bottles of wine aromas to train their nose!",
+      "price": 240,
+      "img": "subscription_thumbnails/myvitibox.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 30,
+   "fields": {
+      "name": "Taste of Bubbles - 3 month membership",
+      "company": 10,
+      "category": 0,
+      "description": "Bubble Club subscription is the perfect gift for the sparkling wine lover in your life, whatever the occasion. Each Bubble Box is always a complete surprise until arrives, but is guaranteed to be packed with two delicious bottles of sparkling wine, gourmet goodies and our glossy club magazine.",
+      "price": 99,
+      "img": "subscription_thumbnails/bubbleclub.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 31,
+   "fields": {
+      "name": "Year of Bubbles - Bi-monthly membership",
+      "company": 10,
+      "category": 0,
+      "description": "Bubble Club subscription is the perfect gift for the sparkling wine lover in your life, whatever the occasion. Each Bubble Box is always a complete surprise until arrives, but is guaranteed to be packed with two delicious bottles of sparkling wine, gourmet goodies and our glossy club magazine.",
+      "price": 198,
+      "img": "subscription_thumbnails/bubbleclub.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 32,
+   "fields": {
+      "name": "Year of Bubbles - Monthly membership",
+      "company": 10,
+      "category": 0,
+      "description": "Bubble Club subscription is the perfect gift for the sparkling wine lover in your life, whatever the occasion. Each Bubble Box is always a complete surprise until arrives, but is guaranteed to be packed with two delicious bottles of sparkling wine, gourmet goodies and our glossy club magazine.",
+      "price": 396,
+      "img": "subscription_thumbnails/bubbleclub.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 33,
+   "fields": {
+      "name": "3 months of surprise presents",
+      "company": 11,
+      "category": 9,
+      "description": "Bored of just getting bills in the post? Well subscribe to Not-Another-Bill and each month you or your lucky recipient will receive a carefully curated & beautifully wrapped surprise present in the post. As well as making your letterbox a more magical place, our aim is to introduce subscribers to exclusive items from great artists, designers and brands. From our boxes, ribbons and beautiful tissue paper to the personalised letter explaining about the present, we really consider how the whole experience looks and feels.",
+      "price": 69,
+      "img": "subscription_thumbnails/not-another-bill.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 34,
+   "fields": {
+      "name": "6 months of surprise presents",
+      "company": 11,
+      "category": 9,
+      "description": "Bored of just getting bills in the post? Well subscribe to Not-Another-Bill and each month you or your lucky recipient will receive a carefully curated & beautifully wrapped surprise present in the post. As well as making your letterbox a more magical place, our aim is to introduce subscribers to exclusive items from great artists, designers and brands. From our boxes, ribbons and beautiful tissue paper to the personalised letter explaining about the present, we really consider how the whole experience looks and feels.",
+      "price": 129,
+      "img": "subscription_thumbnails/not-another-bill.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 35,
+   "fields": {
+      "name": "12 months of surprise presents",
+      "company": 11,
+      "category": 9,
+      "description": "Bored of just getting bills in the post? Well subscribe to Not-Another-Bill and each month you or your lucky recipient will receive a carefully curated & beautifully wrapped surprise present in the post. As well as making your letterbox a more magical place, our aim is to introduce subscribers to exclusive items from great artists, designers and brands. From our boxes, ribbons and beautiful tissue paper to the personalised letter explaining about the present, we really consider how the whole experience looks and feels.",
+      "price": 229,
+      "img": "subscription_thumbnails/not-another-bill.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 36,
+   "fields": {
+      "name": "3 month beauty box subscription",
+      "company": 12,
+      "category": 1,
+      "description": "Do you know a lover of all things beauty? Each month GLOSSYBOX delivers 5 must-have beauty products straight to their door, perfectly packaged in our signature box.",
+      "price": 28.5,
+      "img": "subscription_thumbnails/glossybox.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 37,
+   "fields": {
+      "name": "6 month beauty box subscription",
+      "company": 12,
+      "category": 1,
+      "description": "Do you know a lover of all things beauty? Each month GLOSSYBOX delivers 5 must-have beauty products straight to their door, perfectly packaged in our signature box.",
+      "price": 54,
+      "img": "subscription_thumbnails/glossybox.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 38,
+   "fields": {
+      "name": "12 month beauty box subscription",
+      "company": 12,
+      "category": 1,
+      "description": "Do you know a lover of all things beauty? Each month GLOSSYBOX delivers 5 must-have beauty products straight to their door, perfectly packaged in our signature box.",
+      "price": 102,
+      "img": "subscription_thumbnails/glossybox.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 39,
+   "fields": {
+      "name": "3 months of Mini Japan Crate subscription",
+      "company": 5,
+      "category": 6,
+      "description": "Get crazy and exclusive Japanese candy monthly! Each Mini crate contains 5 items.",
+      "price": 34,
+      "img": "subscription_thumbnails/japancrate1.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 40,
+   "fields": {
+      "name": "6 months of Mini Japan Crate subscription",
+      "company": 5,
+      "category": 6,
+      "description": "Get crazy and exclusive Japanese candy monthly! Each Mini crate contains 5 items.",
+      "price": 66,
+      "img": "subscription_thumbnails/japancrate1.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 41,
+   "fields": {
+      "name": "3 months of Original Japan Crate subscription",
+      "company": 5,
+      "category": 6,
+      "description": "Get crazy and exclusive Japanese candy monthly! Each Original crate contains 10 items, one of which is a DIY Kit.",
+      "price": 72,
+      "img": "subscription_thumbnails/japancrate2.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 42,
+   "fields": {
+      "name": "6 months of Original Japan Crate subscription",
+      "company": 5,
+      "category": 6,
+      "description": "Get crazy and exclusive Japanese candy monthly! Each Original crate contains 10 items, one of which is a DIY Kit.",
+      "price": 140,
+      "img": "subscription_thumbnails/japancrate2.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 43,
+   "fields": {
+      "name": "3 months of Premium Japan Crate subscription",
+      "company": 5,
+      "category": 6,
+      "description": "Get crazy and exclusive Japanese candy monthly! Each Premium crate contains 15 items, including a drink and a DIY Kit.",
+      "price": 87,
+      "img": "subscription_thumbnails/japancrate3.jpg",
+      "reference": ""
+   }
+},
+ {
+   "model": "subscriptions_lib.subscription",
+   "pk": 44,
+   "fields": {
+      "name": "6 months of Premium Japan Crate subscription",
+      "company": 5,
+      "category": 6,
+      "description": "Get crazy and exclusive Japanese candy monthly! Each Premium crate contains 15 items, including a drink and a DIY Kit.",
+      "price": 170,
+      "img": "subscription_thumbnails/japancrate3.jpg",
+      "reference": ""
+   }
+}
+]

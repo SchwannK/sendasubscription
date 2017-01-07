@@ -1,0 +1,119 @@
+[
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 0,
+   "fields": {
+      "name": "HelloFresh",
+      "category": 6,
+      "url": "https://www.hellofresh.co.uk"
+   }
+},
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 1,
+   "fields": {
+      "name": "BeerBods",
+      "category": 0,
+      "url": "https://beerbods.co.uk/"
+   }
+},
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 2,
+   "fields": {
+      "name": "eightpointnine",
+      "category": 0,
+      "url": "https://eightpointnine.com/"
+   }
+},
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 3,
+   "fields": {
+      "name": "Cafedirect",
+      "category": 2,
+      "url": "http://handpicked.cafedirect.co.uk"
+   }
+},
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 4,
+   "fields": {
+      "name": "Beer52",
+      "category": 0,
+      "url": "https://www.beer52.com/"
+   }
+},
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 5,
+   "fields": {
+      "name": "Japan Crate",
+      "category": 6,
+      "url": "https://japancrate.com/"
+   }
+},
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 6,
+   "fields": {
+      "name": "Cocoa Runners",
+      "category": 6,
+      "url": "http://cocoarunners.com/"
+   }
+},
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 7,
+   "fields": {
+      "name": "Graze",
+      "category": 6,
+      "url": "https://www.graze.com/"
+   }
+},
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 8,
+   "fields": {
+      "name": "Hotel Chocolat",
+      "category": 6,
+      "url": "http://www.hotelchocolat.com/"
+   }
+},
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 9,
+   "fields": {
+      "name": "My Vitibox",
+      "category": 0,
+      "url": "http://www.myvitibox.co.uk/"
+   }
+},
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 10,
+   "fields": {
+      "name": "Bubble Club",
+      "category": 0,
+      "url": "http://www.bubbleclub.co.uk/"
+   }
+},
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 11,
+   "fields": {
+      "name": "Not Another Bill",
+      "category": 9,
+      "url": "https://notanotherbill.com/"
+   }
+},
+ {
+   "model": "subscriptions_lib.company",
+   "pk": 12,
+   "fields": {
+      "name": "GlossyBox",
+      "category": 1,
+      "url": "https://www.glossybox.co.uk/"
+   }
+}
+]

@@ -1,0 +1,114 @@
+[
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 0,
+   "fields": {
+      "name": "Alcohol",
+      "favicon": "beer"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 1,
+   "fields": {
+      "name": "Beauty",
+      "favicon": "eye"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 2,
+   "fields": {
+      "name": "Beverages",
+      "favicon": "coffee"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 3,
+   "fields": {
+      "name": "Children",
+      "favicon": "child"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 4,
+   "fields": {
+      "name": "Creative",
+      "favicon": "paint-brush"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 5,
+   "fields": {
+      "name": "Fashion",
+      "favicon": "black-tie"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 6,
+   "fields": {
+      "name": "Food",
+      "favicon": "cutlery"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 7,
+   "fields": {
+      "name": "Geek",
+      "favicon": "gamepad"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 8,
+   "fields": {
+      "name": "Jewellery",
+      "favicon": "diamond"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 9,
+   "fields": {
+      "name": "Lifestyle",
+      "favicon": "home"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 10,
+   "fields": {
+      "name": "Men",
+      "favicon": "mars"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 11,
+   "fields": {
+      "name": "Pets",
+      "favicon": "paw"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 12,
+   "fields": {
+      "name": "Sport",
+      "favicon": "futbol-o"
+   }
+},
+ {
+   "model": "subscriptions_lib.Category",
+   "pk": 13,
+   "fields": {
+      "name": "Vegan",
+      "favicon": "leaf"
+   }
+}
+]
