@@ -1,8 +1,8 @@
 {% load utiltags %}
 {% load static %}
 
-<div class="col-xs-6 col-md-4 filter {{ subscription.company.category.name|cut:" "|cut:"("|cut:")"|cut:"&" }}">
-	<div class="card cap-top">
+<div class="col-xs-6 col-md-4 filter {{ subscription.company.category.name|cut:" "|cut:"("|cut:")"|cut:"&" }}" price="{{ subscription.price|floatformat:"0" }}">
+	<div class="card cap-top" style="height:520px">
 		<div class="card-header">
 			<h5 class="card-title" data-toggle="modal" data-target="#cardModal{{subscription.pk}}">{{ subscription.name }}</h5>
 			<h6 class="card-title text-muted">by <a href="{{ subscription.company.url }}" target="blank">{{ subscription.company.name }}</a></h6>
@@ -12,7 +12,6 @@
 			<span class="tag tag-default">{{ subscription.company.category.name }}</span>
 		</div>
 		<div class="text-xs-center">
-			<br>
 				<img class="img-fluid" src="{% static subscription.img.url %}" data-toggle="modal" data-target="#cardModal{{subscription.pk}}">
 		</div>
 		<div class="card-block">
@@ -109,19 +108,39 @@
 					<!-- Stripe payment button -->
 					<div class="modal-footer">
 						<div class="text-xs-center">
-							<form action="/" method="POST">
-								{% csrf_token %}
-								<script src="https://checkout.stripe.com/checkout.js"
-									class="stripe-button"
-									data-key="pk_test_Zb0BmjBPj0od3b6MJBXmQqmd"
-									data-amount="{{ subscription.price|times:100 }}"
-									data-name="{{ subscription.name }}"
-									data-description="{{ subscription.description }}"
-									data-image="https://logo.clearbit.com/{{ subscription.company.url }}"
-									data-locale="auto"
-									data-currency="gbp">
-								</script>
-							</form>
+
+						<!--
+						<button id="customButton{{subscription.pk}}">Purchase</button>
+
+						<script>
+						var handler{{subscription.pk}} = StripeCheckout.configure({
+						  key: 'pk_test_Zb0BmjBPj0od3b6MJBXmQqmd',
+						  image: "https://logo.clearbit.com/{{ subscription.company.url }}",
+						  locale: 'auto',
+						  token: function(token) {
+						    // You can access the token ID with `token.id`.
+						    // Get the token ID to your server-side code for use.
+						  }
+						});
+
+						document.getElementById('customButton{{subscription.pk}}').addEventListener('click', function(e) {
+						  // Open Checkout with further options:
+						  handler{{subscription.pk}}.open({
+						    name: "{{ subscription.name }}",
+						    description: "{{ subscription.description }}",
+						    zipCode: true,
+						    amount: "{{ subscription.price|times:100 }}",
+								currency: "gbp"
+						  });
+						  e.preventDefault();
+						});
+
+						// Close Checkout on page navigation:
+						window.addEventListener('popstate', function() {
+						  handler{{subscription.pk}}.close();
+						});
+						</script>
+					-->
 						</div>
 					</div>
 				</div>

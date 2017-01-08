@@ -14,6 +14,8 @@
 <link rel="stylesheet" href="{% static 'css/custom-image-carousel.css' %}" type="text/css">
 <link rel="stylesheet" href="{% static 'css/nouislider.min.css' %}" type="text/css">
 <link rel="icon" type="image/png" href="../../static/img/favicon.png">
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<script src="{% static 'js/wNumb.js' %}"></script>
 {% endblock %}
 
 {% block head_title_base %}Send-a-Subscription{% endblock %}
@@ -47,6 +49,7 @@
 <script src="{% static 'js/jquery.sticky-kit.min.js' %}"></script>
 <script src="{% static 'js/nouislider.min.js' %}"></script>
 <script src="{% static 'js/price_slider.js' %}"></script>
+<script src="{% static 'js/stripe_checkout_button.js' %}"></script>
 
 <!-- Google Analytics -->
 <script>
