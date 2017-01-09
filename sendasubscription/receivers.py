@@ -5,12 +5,10 @@ from account.signals import user_sign_up_attempt, user_signed_up
 from account.signals import user_login_attempt, user_logged_in
 
 from pinax.eventlog.models import log
-from pinax.stripe.actions import customers
 
 
 @receiver(user_logged_in)
 def handle_user_logged_in(sender, **kwargs):
-    print("login")
     log(
         user=kwargs.get("user"),
         action="USER_LOGGED_IN",
@@ -59,4 +57,3 @@ def handle_user_signed_up(sender, **kwargs):
         action="USER_SIGNED_UP",
         extra={}
     )
-    customers.create(kwargs.get("user"))

@@ -29,13 +29,6 @@ PREREQ_APPS = [
     'django.contrib.messages',
     'django.contrib.sites',
     'django.contrib.staticfiles',
-]
-
-PROJECT_APPS = [
-    'sendasubscription',
-    'subscriptions_dir',
-    'subscriptions_lib',
-    'faq',
 
     # theme
     "bootstrapform",
@@ -46,8 +39,14 @@ PROJECT_APPS = [
     # external
     "account",
     "pinax.eventlog",
-    "pinax.stripe",
     "pinax.webanalytics",
+]
+
+PROJECT_APPS = [
+    'sendasubscription',
+    'subscriptions_dir',
+    'subscriptions_lib',
+    'faq',
 ]
 
 INSTALLED_APPS = PREREQ_APPS + PROJECT_APPS
@@ -148,10 +147,6 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
 
-# Go to https://stripe.com/ and grab your keys and put here
-PINAX_STRIPE_SECRET_KEY = "sk_test_ibJMxPw1wAdx6Ip8GftwPLUq"  # begins with sk_
-PINAX_STRIPE_PUBLIC_KEY = "pk_test_Zb0BmjBPj0od3b6MJBXmQqmd"  # beings with pk_
-
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
@@ -186,12 +181,6 @@ FIXTURE_DIRS = [
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'test@gmail.com' # To fill in actual
-EMAIL_HOST_PASSWORD = 'password' # To fill in actual
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
 
 ACCOUNT_OPEN_SIGNUP = True
 ACCOUNT_EMAIL_UNIQUE = True

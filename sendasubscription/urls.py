@@ -9,8 +9,6 @@ urlpatterns = [
     url(r"", include('subscriptions_dir.urls')),
     url(r"^admin/", include(admin.site.urls)),
     url(r"^account/", include("account.urls")),
-    url(r"^payments/", include("pinax.stripe.urls")),
-    url(r'^contact/', views.contact, name='contact'),
     url(r'^faq/', include('faq.urls')),
 ]
 
