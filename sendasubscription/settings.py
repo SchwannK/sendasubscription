@@ -1,4 +1,5 @@
 import os
+import braintree
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
@@ -38,8 +39,7 @@ PREREQ_APPS = [
 
     # external
     "account",
-    "pinax.eventlog",
-    "pinax.webanalytics",
+    'braintree',
 ]
 
 PROJECT_APPS = [
@@ -193,3 +193,16 @@ ACCOUNT_USE_AUTH_AUTHENTICATE = True
 AUTHENTICATION_BACKENDS = [
     "account.auth_backends.UsernameAuthenticationBackend",
 ]
+
+LOGIN_URL = '/account/login/'
+
+BRAINTREE_MERCHANT = '397vd9bsszswcwwn'
+BRAINTREE_PUBLIC_KEY = 'wbpwgh68cccmj3nb'
+BRAINTREE_PRIVATE_KEY = '9ebc7463a095eae27fd4ce556ebdc52a'
+
+braintree.Configuration.configure(
+    braintree.Environment.Sandbox,
+    BRAINTREE_MERCHANT,
+    BRAINTREE_PUBLIC_KEY,
+    BRAINTREE_PRIVATE_KEY
+)

@@ -1,0 +1,30 @@
+{% extends "site_base.html" %}
+
+{% load i18n %} 
+
+{% block body_class %}home{% endblock %}
+
+{% block body_base %}
+<form id="checkout" method="post" action="/payment/">
+	<input type='hidden' id='client_token' value='{{ client_token }}'>
+	<input type="hidden" value='{{ subscription.pk }}' name='subscription'>
+	<div id="payment-form">
+		Subscription: {{ subscription.name }}
+		<br>
+		Price: {{ subscription.price }}
+		<br>
+		Name: <input type='text' name='giftee_name'>
+		<br>
+		Email: <input type='text' name='giftee_email'>
+	</div>
+	<input type="submit" value="Subcribe">
+</form>
+<script src="https://js.braintreegateway.com/v2/braintree.js"></script>
+<script>
+	var clientToken = document.getElementById('client_token').value;
+
+	braintree.setup(clientToken, "dropin", {
+		container : "payment-form"
+	});
+</script>
+{% endblock %}

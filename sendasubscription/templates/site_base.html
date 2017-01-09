@@ -2,7 +2,6 @@
 
 {% load staticfiles %}
 
-{% load pinax_webanalytics_tags %}
 {% load i18n %}
 {% load account_tags %}
 
@@ -68,8 +67,4 @@
 	ga('create', 'UA-89823937-1', 'auto');
 	ga('send', 'pageview');
 </script>
-{% endblock %}
-{% block extra_body_base %}
-    {% analytics %}
-    {% block extra_body %}{% endblock %}
 {% endblock %}
