@@ -12,3 +12,4 @@ pinax-stripe==3.3.0
 pinax-webanalytics==2.0.4
 pinax-eventlog==1.1.2
 pinax-theme-bootstrap==7.11.0
+django-taggit==0.21.3

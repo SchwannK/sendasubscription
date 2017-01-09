@@ -29,7 +29,6 @@ PREREQ_APPS = [
     'django.contrib.messages',
     'django.contrib.sites',
     'django.contrib.staticfiles',
-    'crispy_forms',
 ]
 
 PROJECT_APPS = [
@@ -40,7 +39,9 @@ PROJECT_APPS = [
 
     # theme
     "bootstrapform",
+    "crispy_forms",
     "pinax_theme_bootstrap",
+    "taggit",
 
     # external
     "account",

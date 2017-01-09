@@ -1,5 +1,7 @@
 from django.db import models
 
+from taggit.managers import TaggableManager
+
 # Create your models here.
 
 class Category(models.Model):
@@ -27,6 +29,8 @@ class Subscription(models.Model):
     url = models.CharField(max_length=200, null=True, blank=True)
     img = models.ImageField(upload_to = 'subscription_thumbnails/')
     reference = models.CharField(max_length=100, blank=True)
+
+    tags = TaggableManager()
 
     def __str__(self):
         return self.name or self.reference

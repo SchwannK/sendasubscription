@@ -23,7 +23,7 @@
 	</div>
 </section>
 <br> <br>
-<div class="container">
+<div class="container"
 	<div class="row">
 		<div class="col-lg-12 text-xs-center">
 			<h2 class="section-heading text-capitalize">How it works</h2>
@@ -32,35 +32,26 @@
 		</div>
 	</div>
 </div>
-<div class="container">
+<div class="container" style="z-index:1; background-color:white">
 	<div class="row">
-		<div class="col-lg-3 col-md-6 text-xs-center">
+		<div class="col-md-4 text-xs-center">
 			<div class="service-box">
 				<i class="fa fa-5x fa-gift text-primary sr-icons"></i> <br> <br>
 				<h3>1. Browse gifts</h3>
 				<p class="text-muted">Browse our carefully curated selection of subscriptions below for something to gift to a friend or loved one.</p>
 			</div>
 		</div>
-		<div class="col-lg-3 col-md-6 text-xs-center">
+		<div class="col-md-4 text-xs-center">
 			<div class="service-box">
-				<i class="fa fa-5x fa-file-text-o text-primary sr-icons"></i> <br>
-				<br>
-				<h3>2. Read details</h3>
-				<p class="text-muted">Click on a card to find out more about exactly what you're gifting for each subscription.</p>
-			</div>
-		</div>
-		<div class="col-lg-3 col-md-6 text-xs-center">
-			<div class="service-box">
-				<i class="fa fa-5x fa-pencil-square-o text-primary sr-icons"></i> <br>
-				<br>
-				<h3>3. Gift subscription</h3>
+				<i class="fa fa-5x fa-pencil-square-o text-primary sr-icons"></i> <br><br>
+				<h3>2. Gift subscription</h3>
 				<p class="text-muted">Give us some basic details about the lucky recipient you are sending the gift to and make the payment.</p>
 			</div>
 		</div>
-		<div class="col-lg-3 col-md-6 text-xs-center">
+		<div class="col-md-4 text-xs-center">
 			<div class="service-box">
 				<i class="fa fa-5x fa-magic text-primary sr-icons"></i> <br> <br>
-				<h3>4. Magic happens</h3>
+				<h3>3. Magic happens</h3>
 				<p class="text-muted">We send out the subscription gift on your behalf, and the lucky person gets to indulge in the gift for your chosen duration.</p>
 			</div>
 		</div>
@@ -68,16 +59,61 @@
 	<hr>
 </div>
 
-<br>
-
 <div class="container" id="gift-browser">
-	<div class="row">
-		<div class="col-lg-12 text-xs-center">
-			<h2 class="section-heading text-capitalize">Browse all subscription gifts</h2>
-			<hr class="primary">
-			<br>
+	<div id="gift-browser-sticker" style="z-index: 1; background-color:white">
+		<div class="row">
+			<div class="col-lg-12 text-xs-center">
+				<div style="height:20px"></div>
+				<h2 class="section-heading text-capitalize">Browse subscription gifts</h2>
+				<hr class="primary">
+				<br>
+			</div>
 		</div>
+
+		<div class="row recipient-nav">
+			<div class="col-lg-2 text-xs-center">
+				<a class="nav-link" href="/#gift-browser">
+					<i class="fa fa-2x fa-globe text-primary sr-icons"></i><br><br>
+					<h5>All gifts</h5>
+				</a>
+			</div>
+			<div class="col-lg-2 text-xs-center">
+				<a class="nav-link" href="/subscriptions/popular/#gift-browser">
+					<i class="fa fa-2x fa-star text-primary sr-icons"></i><br><br>
+					<h5>Popular</h5>
+				</a>
+			</div>
+			<div class="col-lg-2 text-xs-center">
+				<a class="nav-link" href="/subscriptions/new/#gift-browser">
+					<i class="fa fa-2x fa-check-circle-o text-primary sr-icons"></i><br><br>
+					<h5>New</h5>
+				</a>
+			</div>
+			<div class="col-lg-2 text-xs-center">
+				<a class="nav-link" href="/subscriptions/him/#gift-browser">
+					<i class="fa fa-2x fa-mars text-primary sr-icons"></i><br><br>
+					<h5>For him</h5>
+				</a>
+			</div>
+			<div class="col-lg-2 text-xs-center">
+				<a class="nav-link" href="/subscriptions/her/#gift-browser">
+					<i class="fa fa-2x fa-venus text-primary sr-icons"></i><br><br>
+					<h5>For her</h5>
+				</a>
+			</div>
+			<div class="col-lg-2 text-xs-center">
+				<a class="nav-link" href="/subscriptions/kids/#gift-browser">
+					<i class="fa fa-2x fa-child text-primary sr-icons"></i><br><br>
+					<h5>For kids</h5>
+				</a>
+			</div>
+		</div>
+		<hr>
 	</div>
+
+
+
+	<div style="height:20px"></div>
 
 	<div class="row">
 		<div id="filtersidebar" class="col-md-2">
@@ -107,7 +143,7 @@
 			<div id="slider"></div>
 
 		</div>
-		<div class="col-md-10">
+		<div class="col-md-10" id="subscriptionitems">
 		{% for subscription in subscriptions %}
 			{% include 'subscriptions_dir/subscription_template.html' with subscription=subscription %}
 		{% endfor %}

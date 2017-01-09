@@ -1,0 +1,42 @@
+[
+ {
+   "model": "taggit.tag",
+   "pk": 1,
+   "fields": {
+      "name": "him",
+      "slug": "him"
+   }
+},
+ {
+   "model": "taggit.tag",
+   "pk": 2,
+   "fields": {
+      "name": "her",
+      "slug": "her"
+   }
+},
+ {
+   "model": "taggit.tag",
+   "pk": 3,
+   "fields": {
+      "name": "kids",
+      "slug": "kids"
+   }
+},
+ {
+   "model": "taggit.tag",
+   "pk": 4,
+   "fields": {
+      "name": "popular",
+      "slug": "popular"
+   }
+},
+ {
+   "model": "taggit.tag",
+   "pk": 5,
+   "fields": {
+      "name": "new",
+      "slug": "new"
+   }
+}
+]

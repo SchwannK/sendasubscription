@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
-    $("#filtersidebar").stick_in_parent({offset_top: 70});
+    $("#filtersidebar").stick_in_parent({offset_top: 300});
+    $("#gift-browser-sticker").stick_in_parent({offset_top: 54});
 
     $(".filter-button").click(function(){
 

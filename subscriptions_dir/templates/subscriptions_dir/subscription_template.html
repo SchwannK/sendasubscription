@@ -1,5 +1,6 @@
 {% load utiltags %}
 {% load static %}
+{% load bootstrap %}
 
 <div class="col-xs-6 col-md-4 filter {{ subscription.company.category.name|cut:" "|cut:"("|cut:")"|cut:"&" }}" price="{{ subscription.price|floatformat:"0" }}" data-filter="{{ subscription.company.category.name|cut:" "|cut:"("|cut:")"|cut:"&" }}">
 	<div class="card cap-top" style="height:520px">
@@ -102,7 +103,26 @@
 						</div>
 
 						<br>
+						<div class="text-xs-center">
+							<h4>About this subscription</h4>
+						</div>
 						<p>{{ subscription.description }}</p>
+
+						<div style="height:30px"></div>
+
+						<div class="text-xs-center">
+							<h4>Gift this subscription!</h4>
+						</div>
+
+						<form role="form">
+					    <legend>Recipient's details</legend>
+					    {% csrf_token %}
+					    {{ form|bootstrap }}
+					    <div class="form-group">
+					      <button type="submit" class="btn btn-primary">Submit</button>
+					    </div>
+						</form>
+
 					</div>
 
 					<!-- Stripe payment button -->
