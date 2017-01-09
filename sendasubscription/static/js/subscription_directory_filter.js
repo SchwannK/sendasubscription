@@ -3,16 +3,32 @@ $(document).ready(function(){
     $("#filtersidebar").stick_in_parent({offset_top: 70});
 
     $(".filter-button").click(function(){
+
+        var slider = document.getElementById('slider');
+        var slider_values = slider.noUiSlider.get();
+
         var value = $(this).attr('data-filter');
 
         if(value == "all")
         {
-            $('.filter').show('1000');
+
+          $(".filter").filter(function() {
+            return parseFloat($(this).attr("price")) >= slider_values[0] && parseFloat($(this).attr("price")) <= slider_values[1];
+          }).show('1000');
+
+          $(".filter").filter(function() {
+            return parseFloat($(this).attr("price")) < slider_values[0] || parseFloat($(this).attr("price")) > slider_values[1];
+          }).hide('1000');
+
         }
         else
         {
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
+            $(".filter").not('.'+value).hide();
+            $('.filter').filter('.'+value).show();
+
+            $(".filter").filter(function() {
+              return parseFloat($(this).attr("price")) < slider_values[0] || parseFloat($(this).attr("price")) > slider_values[1];
+            }).hide('1000');
         }
     });
 

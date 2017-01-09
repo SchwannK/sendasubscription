@@ -1,7 +1,7 @@
 {% load utiltags %}
 {% load static %}
 
-<div class="col-xs-6 col-md-4 filter {{ subscription.company.category.name|cut:" "|cut:"("|cut:")"|cut:"&" }}" price="{{ subscription.price|floatformat:"0" }}">
+<div class="col-xs-6 col-md-4 filter {{ subscription.company.category.name|cut:" "|cut:"("|cut:")"|cut:"&" }}" price="{{ subscription.price|floatformat:"0" }}" data-filter="{{ subscription.company.category.name|cut:" "|cut:"("|cut:")"|cut:"&" }}">
 	<div class="card cap-top" style="height:520px">
 		<div class="card-header">
 			<h5 class="card-title" data-toggle="modal" data-target="#cardModal{{subscription.pk}}">{{ subscription.name }}</h5>
