@@ -70,16 +70,16 @@
 								<!-- Wrapper for slides -->
 								<div class='carousel-inner' role="listbox">
 									<div class="carousel-item active">
-										<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name }}/0.jpg" alt="" />
+										<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name|lower }}/0.jpg" alt="" />
 									</div>
 									<div class="carousel-item">
-										<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name }}/1.jpg" alt="" />
+										<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name|lower }}/1.jpg" alt="" />
 									</div>
 									<div class="carousel-item">
-										<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name }}/2.jpg" alt="" />
+										<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name|lower }}/2.jpg" alt="" />
 									</div>
 									<div class="carousel-item">
-										<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name }}/3.jpg" alt="" />
+										<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name|lower }}/3.jpg" alt="" />
 									</div>
 								</div>
 
@@ -97,16 +97,16 @@
 							<!-- Indicators -->
 							<ol class='carousel-indicators mCustomScrollbar'>
 								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='0' class='active'>
-									<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name }}/0.jpg" style="width:100px; height:50px" alt="" />
+									<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name|lower }}/0.jpg" style="width:100px; height:50px" alt="" />
 								</li>
 								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='1'>
-									<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name }}/1.jpg" style="width:100px; height:50px" alt="" />
+									<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name|lower }}/1.jpg" style="width:100px; height:50px" alt="" />
 								</li>
 								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='2'>
-									<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name }}/2.jpg" style="width:100px; height:50px" alt="" />
+									<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name|lower}}/2.jpg" style="width:100px; height:50px" alt="" />
 								</li>
 								<li data-target='#carousel-custom{{ subscription.pk }}' data-slide-to='3'>
-									<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name }}/3.jpg" style="width:100px; height:50px" alt="" />
+									<img src="{{ baseUrl}}subscription_thumbnails/modal/{{ subscription.company.name|lower }}/3.jpg" style="width:100px; height:50px" alt="" />
 								</li>
 							</ol>
 						</div>
