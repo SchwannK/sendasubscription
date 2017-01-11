@@ -15,6 +15,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'monosaur.pythonanywhere.com',
     'www.sendasubscription.com',
+    'www.monosaur.com',
     'localhost',
     '03f9b3cc.ngrok.io',
 ]

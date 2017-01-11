@@ -1,6 +1,7 @@
 from django.db import models
 
 from taggit.managers import TaggableManager
+from taggit.models import TaggedItemBase
 
 # Create your models here.
 
@@ -19,6 +20,8 @@ class Company(models.Model):
     def __str__(self):
         return self.name or self.reference
 
+class TaggedSubscription(TaggedItemBase):
+    content_object = models.ForeignKey('Subscription')
 
 class Subscription(models.Model):
     name = models.CharField(max_length=200, null=True, blank=True)
@@ -30,7 +33,7 @@ class Subscription(models.Model):
     img = models.ImageField(upload_to = 'subscription_thumbnails/')
     reference = models.CharField(max_length=100, blank=True)
 
-    tags = TaggableManager()
+    tags = TaggableManager(blank=True, through=TaggedSubscription)
 
     def __str__(self):
         return self.name or self.reference
