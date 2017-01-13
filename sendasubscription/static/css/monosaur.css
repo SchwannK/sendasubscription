@@ -106,6 +106,22 @@ figcaption {
 	padding: 10px;
 }
 
+.hero-unit-about {
+	background-image: url("/static/img/about.jpg");
+	background-size: cover;
+	background-color: #EEEEEE;
+	height: 500px;
+}
+
+.hero-unit-about h1 {
+	color: #FFFFFF;
+	font-size: 80px;
+	letter-spacing: -1px;
+	line-height: 1;
+	font-family: Lobster;
+	padding: 10px;
+}
+
 #gift-browser {
 	padding-top: 70px; margin-top: -70px;
 }

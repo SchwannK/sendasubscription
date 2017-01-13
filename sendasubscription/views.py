@@ -37,3 +37,7 @@ def contact(request):
             return redirect('contact')
 
     return render(request, 'sendasubscription/contact.html', {'navbar':'contact', 'form': form_class})
+
+def about(request):
+
+    return render(request, 'sendasubscription/about.html', {'navbar':'about',})

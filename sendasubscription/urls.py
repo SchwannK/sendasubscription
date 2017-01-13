@@ -10,7 +10,8 @@ urlpatterns = [
     url(r"^admin/", include(admin.site.urls)),
     url(r"^account/", include("account.urls")),
     url(r'^faq/', include('faq.urls')),
-    url(r'^contact/', views.contact, name='contact')
+    url(r'^contact/', views.contact, name='contact'),
+    url(r'^about/', views.about, name='about')
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
